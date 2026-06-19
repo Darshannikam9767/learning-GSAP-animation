@@ -16,8 +16,8 @@ tl.from("#nav h4",{
 })
 
 tl.from("h1",{
-    y:40,
-    duration:.5,
+    y:100,
+    duration:.8,
     opacity:0,
-    scale:0.1
+    scale:0.9
 })
