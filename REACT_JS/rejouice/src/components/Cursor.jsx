@@ -41,9 +41,9 @@ const Cursor = ({ page1Ref }) => {
     return (
         <div
             ref={cursorRef}
-            className='flex items-center justify-center h-[7.5vw] w-[7.5vw] bg-linear-to-br from-orange-600 to-orange-400 fixed top-0 left-0 -translate-x-1/2 -translate-y-1/2 rounded-full z-9 pointer-events-none shadow shadow-amber-600  opacity-0'
+            className='flex items-center justify-center h-[9.5vw] w-[9.5vw] md:h-[7.5vw] md:w-[7.5vw] bg-linear-to-br from-orange-600 to-orange-400 fixed top-0 left-0 -translate-x-1/2 -translate-y-1/2 rounded-full z-9 pointer-events-none shadow shadow-amber-600  opacity-0'
         >
-            <div className=' text-[1.2vw] text-gray-800 font-normal'>Play Reel</div>
+            <div className=' text-[1.9vw] md:text-[1.2vw] text-gray-800 font-normal'>Play Reel</div>
         </div>
     )
 }

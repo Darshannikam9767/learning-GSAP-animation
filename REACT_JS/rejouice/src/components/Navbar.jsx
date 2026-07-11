@@ -4,7 +4,7 @@ const Navbar = () => {
     <div className='text-white h-full w-full flex flex-col items-center justify-between'>
       <nav className='w-full flex items-center justify-between px-[3vw] py-[2vw]'>
         <h3 className='lg:text-[1.3vw] font-light cursor-pointer'>The Venture Agency.</h3>
-        <h4 className='bg-[#ffffff21] py-2 px-4 text-2xl cursor-pointer'>Menu</h4>
+        <h4 className='bg-[#ffffff21] py-2 px-4 text-2xl cursor-pointer backdrop-blur-xs rounded-md'>Menu</h4>
       </nav>
       <h1 className='text-[25vw] font-semibold cursor-default'>
         <span>r</span>
