@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 
-const Cursor = ({ page1Ref }) => {
+const Cursor = () => {
     const cursorRef = useRef(null)
 
     useGSAP(() => {
