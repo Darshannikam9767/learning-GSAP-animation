@@ -1,17 +1,57 @@
 import React from 'react'
-
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 const TopContainer = () => {
-  return (
-    <div className=' pt-5  '>
-        <div className='flex justify-between items-end text-[20px] mb-3  px-[2vw]'>
-            <h4>Full-service creative agency.
-                <br />
-                Two engagement models.
-            </h4>
+  gsap.registerPlugin(ScrollTrigger);
+  useGSAP(() => {
+    gsap.from(".topText .leftText", {
+      x: -100,
+      opacity: 0,
+      duration: 0.8,
+      scrollTrigger: {
+        trigger: ".topText",
+        start: "top 50%",
+        end: "top 30%",
+        scrub:true
+      },
+    },"both");
 
-            <h4>Paris & San Diego</h4>
-        </div>
-        <div className="bg-gray-400 h-0.5 rounded-full"></div>
+    gsap.from(".topText .rightText", {
+      x: 100,
+      opacity: 0,
+      duration: 0.8,
+      scrollTrigger: {
+        trigger: ".topText",
+        start: "top 50%",
+        end: "top 30%",
+        scrub:true
+      },
+    },"both");
+
+    gsap.from(".bottomLine", {
+      y: 200,
+      opacity:0,
+      duration: 0.8,
+      scrollTrigger: {
+        trigger: ".topText",
+        start: "top 50%",
+        end: "top 30%",
+        scrub:true
+      },
+    },"both");
+  })
+  return (
+    <div className=' pt-5 '>
+      <div className='topText flex justify-between items-end text-[20px] mb-3  px-[2vw] overflow-hidden'>
+        <h4 className='leftText'>Full-service creative agency.
+          <br />
+          Two engagement models.
+        </h4>
+
+        <h4 className='rightText'>Paris & San Diego</h4>
+      </div>
+      <div className="bottomLine bg-gray-400 h-0.5 rounded-full"></div>
     </div>
   )
 }

@@ -1,11 +1,11 @@
 import React from 'react'
-import gsap from 'gsap'
+
 import {useGSAP} from '@gsap/react'
 
-const Loader = () => {
+const Loader = ({tl}) => {
 
     useGSAP(()=>{
-        const tl = gsap.timeline()
+        
 
         tl.from("#container h3",{
             x:40,

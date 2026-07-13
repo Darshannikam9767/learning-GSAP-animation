@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from '../Navbar'
 
-const Page1Content = () => {
+const Page1Content = ({tl}) => {
   return (
     <div className=' h-full w-full relative z-10 pb-[10vw] lg:pb-[5vw]'>
-      <Navbar/>
+      <Navbar tl={tl}/>
     </div>
   )
 }
