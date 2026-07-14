@@ -16,7 +16,7 @@ const Navbar = ({tl}) => {
       duration:1,
       stagger:0.1,
       opacity:0,
-      ease:"power4.out"
+      ease:"power4.inOut"
     })
   },)
   return (

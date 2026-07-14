@@ -30,12 +30,10 @@ const TopContainer = () => {
     },"both");
 
     gsap.from(".bottomLine", {
-      y: 200,
-      opacity:0,
-      duration: 0.8,
+      width:"0%",
       scrollTrigger: {
         trigger: ".topText",
-        start: "top 50%",
+        start: "top 70%",
         end: "top 30%",
         scrub:true
       },
