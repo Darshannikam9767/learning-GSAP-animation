@@ -16,7 +16,6 @@ const HeroText = () => {
         scroller:"body",
         start:"top 70%",
         end:"top 60%",
-        scrub:2
       }
     })
   })

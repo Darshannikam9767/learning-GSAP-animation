@@ -8,7 +8,8 @@ const Page1 = ({tl}) => {
   return (
     <div id='page1' className='h-screen w-full relative'>
       <Cursor />
-      <video className=' h-full w-full object-cover absolute' src="https://www.rejouice.com/static/reel-short.mp4" muted loop></video>
+      {/* <video className=' h-full w-full object-cover absolute' src="https://www.rejouice.com/static/reel-short.mp4" muted loop></video> */}
+      <video className=' h-full w-full object-cover absolute' src="../src/assets/reel-short.mp4"  muted loop></video>
       <Page1Content tl={tl} />
     </div>
   )

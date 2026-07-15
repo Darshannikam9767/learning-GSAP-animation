@@ -7,15 +7,14 @@ const TopText = () => {
   const tl = gsap.timeline()
   useGSAP(()=>{
     tl.from(".page3TopText h4, .page3TopText div",{
-      y:100,
+      y:200,
       opacity:0,
-      duration:0.8,
-      stagger:1,
+      stagger:0.7,
       scrollTrigger:{
         trigger:".page3TopText h4",
         scroller:"body",
-        start:"top 70%",
-        end:"top 45%",
+        start:"top 80%",
+        end:"top 50%",
         scrub:2
       }
     })
