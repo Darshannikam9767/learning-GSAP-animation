@@ -18,12 +18,12 @@ const Page3Elements = () => {
         scroller:"body",
         start:"top 90%",
         end:"top 60%",
-        scrub:1
+        scrub:2
       }
     })
    })
   return (
-    <div className='elements min-h-[75vh] flex flex-wrap justify-center lg:justify-between p-[1vw] gap-2 md:gap-0 lg:gap-0 mt-[14vw] overflow-hidden'>
+    <div className='elements min-h-[75vh] flex flex-wrap justify-center lg:justify-between p-[1vw] gap-2 md:gap-1 lg:gap-0 mt-[14vw] overflow-hidden'>
       <div  className='elementContent h-[75vh] w-[90%]  md:w-[32%] lg:mt-0 md:mt-0 relative'>
         <img className='  absolute h-full w-full object-cover object-center hover:opacity-0 duration-400' src="https://images.prismic.io/rejouice-2024/Z1r5Y5bqstJ98aaF_rivian.jpg?auto=format,compress&w=2418&h=1390&fm=avif" alt="" />
         <video className=' h-full w-full object-cover object-center' src="../src/assets/video-1.mp4" autoPlay muted loop></video>

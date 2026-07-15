@@ -15,7 +15,7 @@ const TopContainer = () => {
         end: "top 30%",
         scrub:true
       },
-    },"both");
+    });
 
     gsap.from(".topText .rightText", {
       x: 100,
@@ -25,19 +25,19 @@ const TopContainer = () => {
         trigger: ".topText",
         start: "top 50%",
         end: "top 30%",
-        scrub:true
+        scrub:2
       },
-    },"both");
+    });
 
     gsap.from(".bottomLine", {
       width:"0%",
       scrollTrigger: {
         trigger: ".topText",
-        start: "top 70%",
+        start: "top 50%",
         end: "top 30%",
-        scrub:true
+        scrub:2
       },
-    },"both");
+    });
   })
   return (
     <div className=' pt-5 '>

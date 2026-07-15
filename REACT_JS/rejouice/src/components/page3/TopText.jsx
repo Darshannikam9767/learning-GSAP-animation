@@ -10,14 +10,13 @@ const TopText = () => {
       y:100,
       opacity:0,
       duration:0.8,
-      ease:"sine.inOut",
       stagger:1,
       scrollTrigger:{
         trigger:".page3TopText h4",
         scroller:"body",
-        start:"top 60%",
-        end:"top 50%",
-        scrub:1
+        start:"top 70%",
+        end:"top 45%",
+        scrub:2
       }
     })
   })

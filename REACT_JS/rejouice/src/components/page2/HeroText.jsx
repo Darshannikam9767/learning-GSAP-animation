@@ -15,8 +15,8 @@ const HeroText = () => {
         trigger:".paragraph",
         scroller:"body",
         start:"top 70%",
-        end:"top 50%",
-        scrub:1
+        end:"top 60%",
+        scrub:2
       }
     })
   })

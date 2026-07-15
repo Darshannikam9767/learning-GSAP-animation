@@ -15,18 +15,18 @@ const Page4Top = () => {
                 scroller:"body",
                 start:"top 60%",
                 end:"top 40%",
-                scrub:1
+                scrub:2
             }
         })
 
         gsap.from("#border",{
             width:"0%",
             scrollTrigger:{
-                trigger:"#border",
+                trigger:".page4Text",
                 scroller:"body",
                 start:"top 60%",
                 end:"top 40%",
-                scrub:1
+                scrub:2
             }
         })
     })
