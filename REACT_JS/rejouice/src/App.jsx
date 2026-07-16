@@ -8,21 +8,18 @@ import Page5 from './components/page5/Page5'
 import Loader from './components/Loader'
 
 const App = () => {
-
-const tl = gsap.timeline()
-
+  const tl = gsap.timeline()
   return (
     <div>
-      <Loader tl={tl}/>
+      <Loader tl={tl} />
       <main>
-      <Page1 tl={tl}/>
-      <Page2/>
-      <Page3/>
-      <Page4 />
-      <Page5 />
-    </main>
+        <Page1 tl={tl} />
+        <Page2 />
+        <Page3 />
+        <Page4 />
+        <Page5 />
+      </main>
     </div>
   )
 }
-
 export default App
